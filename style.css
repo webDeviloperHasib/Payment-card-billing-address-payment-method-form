@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding:10px;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-50{
+    flex: 49%;
+    padding: 5px;
+
+}
+.col-75{
+    flex: 74%;
+    background-color: #ddd;
+    padding: 30px;
+    margin-right: 20px;
+}
+.col-25{
+    flex: 24%;
+    background-color: #ddd;
+    padding: 25px;
+    max-height: 360px;
+}
+.price{
+    float: right;
+    margin-top: -10px;
+}
+label{
+    display: block;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+    width: 83%;
+    margin-left: 20px;
+}
+
+.card label{
+    margin-left: 11px;
+}
+.exp label, .exp input, .states label,.states input{
+   margin-left: 5px;
+}
+.exp{
+    margin-top: 8px;
+}
+
+.card h3{
+    font-size: 29px;
+    margin-left: 9px;
+}
+.acc{
+    font-size: 24px;
+}
+.icon-container i{
+    font-size: 55px;
+}
+input{
+    outline: none;
+}
+
+.checkbox{
+    display: inline-block;
+    margin-top: -15px;
+    font-size: 22px !important;
+}
+
+input[type="checkbox"]{
+    margin-left: 35px;
+    width: 22px;
+    margin-top: 5px;
+    height: 22px;
+}
+input[type="submit"]{
+    width: 90%;
+    padding: 16px;
+    background-color: green;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 36px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px){
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pr{
+        margin-bottom: 50px;
+        width: 97%;
+    }
+    .exp input{
+        width:87%;
+    }
+    .exp{
+        margin-bottom: 30px;
+    }
+    .states input{
+        width: 87%;
+    }
+    input[type="submit"]{
+        width: 80%;
+    }
+}
+
+
+
+@media only screen and (max-width:600px){
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pr{
+        margin-bottom: 50px;
+        width: 95%;
+    }
+    .exp input{
+        width:92%;
+    }
+    .exp{
+        margin-bottom: 30px;
+    }
+    .states input{
+        width: 92%;
+    }
+    input[type="submit"]{
+        width: 80%;
+    }
+    .icon-container i{
+        font-size: 30px;
+    }
+    .checkbox{
+        font-size: 18px !important;
+    }
+    #checkbox{
+        width: 22px !important;
+        height: 22px !important;
+    }
+}
